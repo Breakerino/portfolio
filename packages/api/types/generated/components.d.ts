@@ -12,10 +12,10 @@ export interface GeneralHeading extends Struct.ComponentSchema {
   };
 }
 
-export interface GeneralLogo extends Struct.ComponentSchema {
-  collectionName: 'components_general_logos';
+export interface GeneralImage extends Struct.ComponentSchema {
+  collectionName: 'components_general_image';
   info: {
-    displayName: 'Logo';
+    displayName: 'Image';
     icon: 'heart';
   };
   attributes: {
@@ -24,10 +24,23 @@ export interface GeneralLogo extends Struct.ComponentSchema {
   };
 }
 
-export interface GeneralNavigation extends Struct.ComponentSchema {
-  collectionName: 'components_general_navigations';
+export interface SiteMeta extends Struct.ComponentSchema {
+  collectionName: 'components_site_meta';
   info: {
-    displayName: 'Navigation item';
+    displayName: 'Site meta';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    keywords: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SiteNavigation extends Struct.ComponentSchema {
+  collectionName: 'components_site_navigation';
+  info: {
+    displayName: 'Site navigation';
     icon: 'link';
   };
   attributes: {
@@ -36,7 +49,7 @@ export interface GeneralNavigation extends Struct.ComponentSchema {
   };
 }
 
-export interface GeneralSocials extends Struct.ComponentSchema {
+export interface SiteSocials extends Struct.ComponentSchema {
   collectionName: 'components_general_socials';
   info: {
     displayName: 'Social profile';
@@ -52,9 +65,10 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'general.heading': GeneralHeading;
-      'general.logo': GeneralLogo;
-      'general.navigation': GeneralNavigation;
-      'general.socials': GeneralSocials;
+      'general.image': GeneralImage;
+      'site.meta': SiteMeta;
+      'site.navigation': SiteNavigation;
+      'site.socials': SiteSocials;
     }
   }
 }

@@ -53,7 +53,7 @@ export const SOCIAL_PROFILES: SocialProfile[] = [
   },
   {
     id: 'youtube',
-    username: '@breakerinosk', // TODO: Change to @breakerino
+    username: '@breakerinosk', // TODO: Change to "@breakerino" after 14 days (on 06/09/2025)
   },
   {
     id: 'myanimelist',

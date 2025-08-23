@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_general_navigations",
+  "collectionName": "components_site_navigation",
   "info": {
-    "displayName": "Navigation item",
+    "displayName": "Site navigation",
     "icon": "link"
   },
   "options": {},

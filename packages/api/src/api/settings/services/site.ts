@@ -4,4 +4,4 @@
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreService('api::breakerino.general');
+export default factories.createCoreService('api::settings.site');
