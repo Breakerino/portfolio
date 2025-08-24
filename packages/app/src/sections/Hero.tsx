@@ -20,8 +20,8 @@ import { SocialProfile } from '@/app/types';
 
 // --------------------------------------------------------------------- 
 const SOCIAL_PROFILES: SocialProfile[] = [
-	{ id: 'github', username: 'breakerino' },
-	{ id: 'linkedin', username: 'breakerino' }
+	{ type: 'github', username: 'breakerino' },
+	{ type: 'linkedin', username: 'breakerino' }
 ]
 // --------------------------------------------------------------------- 
 
@@ -69,7 +69,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
 						</Text>
 						<div className="flex gap-4">
 							{SOCIAL_PROFILES.map((profile) => (
-								<SocialLink key={profile.id} variant={isMobile ? 'sm' : isTablet ? 'md' : 'lg'} {...profile} />
+								<SocialLink key={profile.type} variant={isMobile ? 'sm' : isTablet ? 'md' : 'lg'} {...profile} />
 							))}
 						</div>
 					</div>

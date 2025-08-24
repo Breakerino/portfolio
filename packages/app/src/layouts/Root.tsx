@@ -24,6 +24,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => (
 			<meta name="apple-mobile-web-app-title" content="Breakerino.me" />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="icon" href="/favicon.ico" />
+			<title>Breakerino | Full Stack Web Developer</title>
 		</Head>
 		<body className="bg-secondary-950 text-primary-50">
 			{children}

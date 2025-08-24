@@ -19,11 +19,9 @@ export default {
 
 		for (let section of (globalSettings.layout.sections as Section[])) {
 			try {
-				const populate = deepDocumentPopulate(`api::sections.${section.id}`);
-
 				// @ts-expect-error Dynamic content type assignment
-				const document = (await strapi.documents(`api::sections.${section.id}`)?.findFirst({
-					populate: populate,
+				const document = (await strapi.documents(`api::sections.${section.id}-section`)?.findFirst({
+					populate: deepDocumentPopulate(`api::sections.${section.id}-section`),
 					status: 'published',
 					locale: DEFAULT_SITE_LOCALE
 				})) ?? {};

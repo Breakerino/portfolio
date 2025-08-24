@@ -23,7 +23,7 @@ export interface SocialLinkProps extends SocialProfile {
 
 const SocialLink: React.FC<SocialLinkProps> = ({
 	className,
-	id,
+	type: id,
 	username,
 	showLabel = true,
 	variant = 'md',

@@ -20,6 +20,6 @@ export interface SocialSite {
 }
 
 export interface SocialProfile {
-	id: keyof typeof SOCIAL_SITES;
+	type: keyof typeof SOCIAL_SITES;
 	username: string;
 }

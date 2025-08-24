@@ -32,31 +32,31 @@ export const HEADER_LOGO: Omit<LogoProps, 'className' | 'href'> = {
 // --------------------------------------------------------------------- 
 export const SOCIAL_PROFILES: SocialProfile[] = [
   {
-    id: 'github',
+    type: 'github',
     username: 'breakerino',
   },
   {
-    id: 'linkedin',
+    type: 'linkedin',
     username: 'breakerino',
   },
   {
-    id: 'facebook',
+    type: 'facebook',
     username: 'matus.breakerino.mendel',
   },
   {
-    id: 'instagram',
+    type: 'instagram',
     username: 'breakerino',
   },
   {
-    id: 'spotify',
+    type: 'spotify',
     username: 'i6xj4absm6rvpqwvgk8kibz7g',
   },
   {
-    id: 'youtube',
-    username: '@breakerinosk', // TODO: Change to @breakerino
+    type: 'youtube',
+    username: '@breakerinosk', // TODO: Change to "@breakerino" after 14 days (on 06/09/2025)
   },
   {
-    id: 'myanimelist',
+    type: 'myanimelist',
     username: 'breakerino',
   },
 ];

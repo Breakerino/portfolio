@@ -63,7 +63,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ className, logo, menuItems, soc
 							'brk-mobile-menu-socials',
 							'w-full flex flex-wrap gap-2'
 						)}>
-							{socialItems.map((item) => <SocialLink key={item.id} variant="xs" showLabel={false} {...item} />)}
+							{socialItems.map((item) => <SocialLink key={item.type} variant="xs" showLabel={false} {...item} />)}
 						</div>
 					)}
 				</Footer>
